@@ -1,0 +1,12 @@
+return function (t)
+local r
+ if t.run then 
+ r=dofile("Clock_7-seg_lcd.lua")({init=t})
+ r=dofile("Clock_7-seg_DS3231.lua")({init=t})
+ r=dofile("Clock_7-seg.lua")({init=t})
+ r=dofile("Clock_7-seg.lua")({start=true})
+ else
+  print("Plugin not started")
+ end
+ return r
+end

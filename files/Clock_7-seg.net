@@ -1,0 +1,13 @@
+return function (t)
+local r
+ if t.run then
+ local mytimer = tmr.create()
+ mytimer:register(5000, tmr.ALARM_SINGLE, function (t)
+  dofile("Clock_7-seg_lcd.lua")({step=tostring(wifi.sta.getip())},function(t)
+   while_led(1)
+  end)
+  t:unregister()end)
+ mytimer:start()
+ end
+ return r
+end

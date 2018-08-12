@@ -1,0 +1,12 @@
+{
+ "run": false,
+ "latch": 6,
+ "qty": 6,
+ "type": "anode",
+ "speed": 500,
+ "sda": 4,
+ "scl": 3,
+ "adc_trig": 500,
+ "pwm_day": 800,
+ "pwm_night": 500
+}
