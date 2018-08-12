@@ -65,7 +65,7 @@
    "type": "number",
    "min": 0,
    "max": 1024,
-   "name": "Trigger switching"
+   "name": "Switching threshold"
   }, {
    "id": "pwm_day",
    "val": 500,
