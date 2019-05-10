@@ -1,0 +1,16 @@
+--[[
+
+Only if the MQTT plugin is installed.
+The script will run every time you connect to the mqtt server.
+
+For example, if you need to pass the initial topics
+--]]
+
+return function (time)
+  local r
+  if time then 
+    _M:pub("Template/comm/mydata", "")
+    _M:pub("Template/info/ver", "0.0.4")  
+  end
+  return r
+end
